@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3101392A-2CE5-4732-AC99-7317F13A37A7}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoAR</RootNamespace>
+    <AssemblyName>ProyectoAR</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConsultarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEmpleado.Designer.cs">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarFactura.Designer.cs">
+      <DependentUpon>frmConsultarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarIngrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarIngrediente.Designer.cs">
+      <DependentUpon>frmConsultarIngrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarOrden.Designer.cs">
+      <DependentUpon>frmConsultarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarPedido.Designer.cs">
+      <DependentUpon>frmConsultarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarProductos.Designer.cs">
+      <DependentUpon>frmConsultarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarProveedor.Designer.cs">
+      <DependentUpon>frmConsultarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarEmpleado.Designer.cs">
+      <DependentUpon>frmEditarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarIngrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarIngrediente.Designer.cs">
+      <DependentUpon>frmEditarIngrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarOrden.Designer.cs">
+      <DependentUpon>frmEditarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarPedido.Designer.cs">
+      <DependentUpon>frmEditarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProducto.Designer.cs">
+      <DependentUpon>frmEditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProveedor.Designer.cs">
+      <DependentUpon>frmEditarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuCocinero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuCocinero.Designer.cs">
+      <DependentUpon>frmMenuCocinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuMesero.Designer.cs">
+      <DependentUpon>frmMenuMesero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarEmpleado.Designer.cs">
+      <DependentUpon>frmRegistrarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarFactura.Designer.cs">
+      <DependentUpon>frmRegistrarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarIngrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarIngrediente.Designer.cs">
+      <DependentUpon>frmRegistrarIngrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarOrden.Designer.cs">
+      <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarPedido.Designer.cs">
+      <DependentUpon>frmRegistrarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarProducto.Designer.cs">
+      <DependentUpon>frmRegistrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarProveedor.Designer.cs">
+      <DependentUpon>frmRegistrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmConsultarEmpleado.resx">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarFactura.resx">
+      <DependentUpon>frmConsultarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarIngrediente.resx">
+      <DependentUpon>frmConsultarIngrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarOrden.resx">
+      <DependentUpon>frmConsultarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarPedido.resx">
+      <DependentUpon>frmConsultarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarProductos.resx">
+      <DependentUpon>frmConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarProveedor.resx">
+      <DependentUpon>frmConsultarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEmpleado.resx">
+      <DependentUpon>frmEditarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarIngrediente.resx">
+      <DependentUpon>frmEditarIngrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarOrden.resx">
+      <DependentUpon>frmEditarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarPedido.resx">
+      <DependentUpon>frmEditarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProducto.resx">
+      <DependentUpon>frmEditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProveedor.resx">
+      <DependentUpon>frmEditarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuCocinero.resx">
+      <DependentUpon>frmMenuCocinero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuMesero.resx">
+      <DependentUpon>frmMenuMesero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarEmpleado.resx">
+      <DependentUpon>frmRegistrarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarFactura.resx">
+      <DependentUpon>frmRegistrarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarIngrediente.resx">
+      <DependentUpon>frmRegistrarIngrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarOrden.resx">
+      <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarPedido.resx">
+      <DependentUpon>frmRegistrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarProducto.resx">
+      <DependentUpon>frmRegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarProveedor.resx">
+      <DependentUpon>frmRegistrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
